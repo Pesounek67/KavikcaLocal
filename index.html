@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Káva & Mléko Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>☕ KÁVOVNÍK</h1>
+    <div class="sub">EVIDENCE SPOTŘEBY</div>
+
+    <span class="label">Kdo pije?</span>
+    <div class="picker">
+        <select id="userSelect" class="native-select">
+            <option value="" disabled selected>— Načítám uživatele... —</option>
+        </select>
+    </div>
+
+    <span class="label">Co jsi měl?</span>
+    <div id="drinkList"></div>
+
+    <button class="send-btn" id="sendBtn" onclick="odeslat()">ODESLAT</button>
+    <button class="summary-btn" onclick="showSummary()">📊 DENNÍ PŘEHLED</button>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
